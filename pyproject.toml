@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "design-patterns"
+version = "0.1.0"
+description = ""
+authors = ["Ashutosh Bhardwaj <ashutoshbh@gmail.com>"]
+readme = "README.md"
+packages = [{include = "design_patterns"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+black = "^23.3.0"
+isort = "^5.12.0"
+multidispatch = "^0.2"
+multipledispatch = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
