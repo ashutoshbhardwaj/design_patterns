@@ -62,7 +62,6 @@ class Museaum:
     def accept(self, visitor: IVisitor):
         for art in self.get_artworks():
             art.accept(visitor)
-        
 
 
 class ArtVisitor(IVisitor):
@@ -93,15 +92,15 @@ def run_museaum() -> None:
 
     artworks = museaum.get_artworks()
 
-    #for art in artworks:
-        # if isinstance(art,Painting):
-        #     art.protect()
-        # if isinstance(art,Sculpture):
-        #     art.clean()
-        # if isinstance(art,Installation):
-        #     art.maintain()
-        # 2nd way - By having an interface Visitor
-        #visitor.visit(art)
+    # for art in artworks:
+    # if isinstance(art,Painting):
+    #     art.protect()
+    # if isinstance(art,Sculpture):
+    #     art.clean()
+    # if isinstance(art,Installation):
+    #     art.maintain()
+    # 2nd way - By having an interface Visitor
+    # visitor.visit(art)
     # 3rd way -
     museaum.accept(visitor)
 
