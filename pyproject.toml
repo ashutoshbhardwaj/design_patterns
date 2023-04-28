@@ -12,6 +12,7 @@ black = "^23.3.0"
 isort = "^5.12.0"
 multidispatch = "^0.2"
 multipledispatch = "^0.6.0"
+tinydb = "^4.7.1"
 
 
 [build-system]
